@@ -1,0 +1,131 @@
+
+.contact-section{
+    text-align: center;
+    padding: 40px;
+    margin-top: 70px;
+}
+.contact-title h2{
+    font-weight: 800;
+    color: rgb(254 178 26);
+    font-size: 3rem;
+}
+.contact-title p{
+    font-size: 1.125rem;
+    color: rgb(156 163 175 );
+    line-height: 1.75rem;
+}
+.contact-card-one{
+    padding: 2.5rem;
+    border: solid 1px rgb(55 65 81 )   ;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+
+}
+.contact-card-one:hover{
+    border: 1px solid rgb(254 178 26);
+}
+.form-control{
+    background: transparent;
+    border: solid 1px rgb(55 65 81 )   ;
+    padding: 16px 10px;
+    color: rgb(255, 255, 255);
+}
+.form-control::placeholder{
+    color: rgb(255, 255, 255) !important;
+}
+.form-control:focus{
+    border-color: rgb(254 178 26);
+    outline: none;
+    box-shadow: none;
+}
+.form-control:focus::placeholder{
+    color: rgb(254 178 26) !important;
+}
+.btn-primary{
+    background-color: rgb(254 178 26);
+    border: none;
+    padding: 12px 24px;
+    font-weight: 600;
+    color: rgb(255, 253, 253);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover{
+    background-color: rgb(217 144 6);
+}
+.contact-card-tow{
+    padding: 2.5rem;
+    border: solid 1px rgb(55 65 81 )   ;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+.contact-card-tow:hover{
+    border: 1px solid rgb(254 178 26);
+}
+.contact-card-tow h5{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: rgb(254 178 26 );
+    font-weight: 700;
+}
+.contact-card-tow p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: rgb(156 163 175 );
+    margin-bottom: 2.5rem;
+}
+a{
+    text-decoration: none;
+}
+.contact-link{
+    padding: 12px;
+    margin-bottom: 15px;
+    transition: background-color 0.2s ease;
+}
+.contact-link:hover{
+    background-color: rgb(21, 64, 133);
+}
+i{
+    background-color: rgb(254 178 26);
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+span{
+    margin-left: 8px;
+    font-size: 1.125rem;
+    color: rgb(255, 255, 255);
+    vertical-align: middle;
+}
+@media (max-width: 576px) {
+  
+  .contact-title h2{
+    font-weight: 800;
+    color: rgb(254 178 26);
+    font-size: 2rem;
+}
+.contact-title p{
+    font-size: 1rem;
+    color: rgb(156 163 175 );
+    line-height: 1.75rem;
+}
+.contact-card-tow h5{
+    font-size: 1.2rem;
+    line-height: 2.25rem;
+    color: rgb(254 178 26 );
+    font-weight: 700;
+}
+.contact-card-tow p {
+    font-size: 0.75rem;
+    line-height: 1.75rem;
+    color: rgb(156 163 175 );
+    margin-bottom: 2.5rem;
+}
+span{
+    font-size: 1rem;
+}
+}   

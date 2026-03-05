@@ -1,0 +1,63 @@
+<section class="contact-section">
+    <div class="contact-title">
+        <h2> Let’s Talk </h2>
+        <p> Have a project, idea, or collaboration 
+            in mind? Drop a message and let’s make it real.
+        </p>
+    </div>
+    <div class="container mt-5">
+        <div class="row g-5 ">
+
+            <div class="col-md-6 slide-left">
+                <div class="contact-card-tow">
+                  <div class="text-start">
+                    <h5>Let's Build Something Bold</h5>
+                    <p>Available for freelance, full-time roles, or creative collaboration.</p>
+                  </div>
+                  <a href="https://wa.me/201011054680" target="_blank"aria-label="WhatsApp" >
+                    <div class="w-100 text-start rounded-3 contact-link">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span> WhatsApp </span>
+                     </div>
+                  </a>
+                  <a href="https://www.linkedin.com/in/zahraa-sami" target="_blank" aria-label="LinkedIn" >
+                    <div class="w-100 text-start rounded-3 contact-link">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <span> LinkedIn </span>
+                     </div>
+                  </a>
+                  <a href="https://github.com/ahmed12v?tab=repositories" target="_blank" aria-label="GitHub" >
+                    <div class="w-100 text-start rounded-3 contact-link">
+                        <i class="fa-brands fa-github"></i>
+                        <span> GitHub </span>
+                     </div>
+                  </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 slide-right">
+                <div class="contact-card-one">
+               <form [formGroup]="contactForm" >
+                    <div class="mb-3">
+                        <input formControlName="name"
+                        required  type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="mb-3">
+                        <input formControlName="email" required
+                         type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea formControlName="message"
+                         required class="form-control" id="message" rows="5" placeholder="Message"></textarea>
+                    </div>
+                    <button  [disabled]="contactForm.invalid || loading()" 
+                    class="btn btn-primary w-100">
+                        {{ loading() ? 'Sending...' : 'Send Message' }}
+                </button>
+                </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>

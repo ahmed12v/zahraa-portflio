@@ -1,0 +1,35 @@
+<nav class="navbar" >
+  <div class="logo"> 
+    <button class="resume-btn"
+     (click)="openMycv()"
+     >
+       Resume
+    </button>
+  </div>
+
+  <div class="burger" [class.active]="menuOpen" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<div class="side-menu" [class.active]="menuOpen">
+  <ul>
+    <li>
+  <a (click)="scrollTo('about'); closeMenu()">About</a>
+</li>
+
+<li>
+  <a (click)="scrollTo('skills'); closeMenu()">Skills</a>
+</li>
+
+<li>
+  <a (click)="scrollTo('experience'); closeMenu()">Experience</a>
+</li>
+
+<li>
+  <a (click)="scrollTo('contact'); closeMenu()">Contact</a>
+</li>
+  </ul>
+</div>

@@ -1,0 +1,94 @@
+.projects-section{
+    margin-top: 70px;
+    padding: 40px;
+}
+.projects-tittle h2{
+    font-weight: 800;
+    color: rgb(254 178 26);
+    font-size: 3rem;
+}
+.projects-tittle p{
+    font-size: 1.125rem;
+    color: rgb(156 163 175 );
+    line-height: 1.75rem;
+}
+.project-card{
+    background-color: rgb(0 0 0 / 0.3);
+    padding: 1.5rem;
+    border: solid 1px rgb(55 65 81 / var(--tw-border-opacity, 1));
+    border-radius: 16px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    overflow: hidden;
+}
+.project-card:hover .project-image{
+    transform: scale(1.1);
+}
+.project-card:hover{
+    box-shadow: 0 10px 15px -3px rgb(254 178 26 / 0.1), 0 4px 6px -2px rgb(254 178 26 / 0.05);
+}
+.image-wrapper {
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.project-image{
+    width: 100%;
+    border-radius: 12px;
+    height: 200px;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+}
+.card-info h3{
+font-weight: 700;
+font-size: 1.25rem;
+margin-bottom: 16px;
+}
+.card-info p{
+    color: rgb(156 163 175 );
+    font-size: 0.875rem;
+    margin-bottom: 16px;
+}
+.tags-languagge{
+    margin-bottom: 16px !important;
+}
+.tag-span{
+    padding: 4px 8px;
+    color: rgb(254 178 26 );
+    background-color: #feb21a1a;
+    border-radius: 9999px;
+    font-size: 10px;
+}
+.live-demo{
+    justify-content: space-between;
+}
+.live-link{
+    color: rgb(254 178 26);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-decoration: none;
+}
+.live-link:hover{
+    text-decoration: underline;
+}
+.github-link{
+    color: rgb(156 163 175 );
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+.github-link:hover{
+    color: rgb(255, 255, 255);
+    line-height: 1.25rem;
+}
+@media (max-width: 576px) {
+  
+  .projects-tittle h2{
+    font-weight: 800;
+    color: rgb(254 178 26);
+    font-size: 2rem;
+}
+.projects-tittle p{
+    font-size: 1rem;
+    color: rgb(156 163 175 );
+    line-height: 1.75rem;
+}
+}

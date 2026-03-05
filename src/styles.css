@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+ @import "../node_modules/bootstrap/dist/css/bootstrap.min.css" ;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(120deg, #0a1f44, #0b3a7a);
+}
+:root{
+    --primary-color: #0b3a7a;
+    --secondary-color: #ffb703;
+    --font-color: #ffffff;
+    --background: linear-gradient(120deg, #0a1f44, #0b3a7a);
+}
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+[appScrollReveal] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-in-out;
+}
+
+[appScrollReveal].show {
+  opacity: 1;
+  transform: translateY(0);
+}
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.slide-left {
+  animation: slideFromLeft 1.5s ease-out forwards;
+}
+.slide-right {
+  animation: slideFromRight 1.5s ease-out forwards;
+}

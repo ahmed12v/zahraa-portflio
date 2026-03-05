@@ -1,0 +1,28 @@
+.footer{
+    background-color: rgb(0 0 0 / 0.2);
+    padding: 50px ;
+    border-top: 1px solid rgba(255, 183, 3, 0.3);
+}
+h2{
+    color: var(--font-color);
+    font-weight: 600;
+}
+.my-carrer{
+    color: rgb(156 163 175);
+    font-weight: 300;
+}
+.footer-social{
+    display: block;
+   
+}
+.footer-social a{
+    color: var(--secondary-color);
+    font-size: 18px;
+    text-decoration: none;
+}
+.footer-copy{
+    color: rgb(107 114 128);
+}
+.footer-copy span{
+    color: var(--secondary-color);
+}
