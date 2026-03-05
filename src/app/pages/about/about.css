@@ -195,13 +195,12 @@ h2 {
 
   .ring {
     width: 280px;
-    height: 2800px;
+    height: 280px;
     border-width: 8px;
   }
 
   .image-wrapper img {
-    width: 300px !important; 
-    height: 280px;
+    width: 220px !important; 
   }
 }
 
